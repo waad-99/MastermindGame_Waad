@@ -1,35 +1,36 @@
 # My Mastermind Game – C# Console Version
 
-## 🧠 Game Description
-A C# implementation of the classic Mastermind game using OOP principles.
+## Game Description  
+This is a small project I made to practice C#. It’s based on the Mastermind game. I tried to use simple object-oriented programming (OOP) ideas to make the code more organized.
 
-## 🕹️ How to Play
-- The game selects a secret 4-digit code using numbers 0-8 (no duplicates).
-- You have a limited number of attempts to guess it.
-- After each guess, the game shows:
-  - Well placed pieces.
-  - Misplaced pieces.
+## How to Play  
+- The game picks a secret 4-digit code using numbers from 0 to 8.  
+- All digits are different.  
+- You have a few chances to guess the correct code.  
+- After each guess, the game tells you:
+  - How many numbers are in the correct place.  
+  - How many numbers are correct but in the wrong place.
 
-## ⚙️ Usage
-Run from terminal:
+## How to Run  
+Open the terminal or command prompt and run:
 ```
 MyMastermind.exe -c 0123 -t 12
 ```
 
-- `-c` Optional: secret code
-- `-t` Optional: max attempts (default: 10)
+- `-c`: (optional) lets you choose the secret code.  
+- `-t`: (optional) lets you change how many tries you get. Default is 10.
 
-## 🧱 OOP Principles Used
-- Classes and encapsulation
-- Static utility classes
-- Evaluation logic abstraction
+## What I Used from OOP  
+- I made classes for different parts of the game.  
+- I tried to keep things simple and clean.  
+- I separated the game logic from the input checking.
 
-## 📁 Files
-- `Program.cs`
-- `Game.cs`
-- `CodeGenerator.cs`
-- `GuessEvaluator.cs`
-- `InputValidator.cs`
+## Files Included  
+- `Program.cs`: The main file that starts everything.  
+- `Game.cs`: Handles the game loop.  
+- `CodeGenerator.cs`: Makes the random code.  
+- `GuessEvaluator.cs`: Checks how good the guess is.  
+- `InputValidator.cs`: Makes sure the input is okay.
 
-## 👩‍💻 Author
+---
 Developed for Steer 2025 Gameplay Programming Assessment.
